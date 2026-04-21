@@ -98,7 +98,7 @@ export default function LandingPage() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="mb-6"
               >
-                <p className="bismillah bismillah-display text-5xl md:text-7xl gold-shimmer font-semibold leading-relaxed">
+                <p className="bismillah bismillah-display text-3xl md:text-6xl lg:text-7xl gold-shimmer font-semibold leading-relaxed">
                   بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
                 </p>
               </motion.div>
@@ -115,7 +115,7 @@ export default function LandingPage() {
 
               {/* Typewriter welcome */}
               <div className="mb-6 min-h-[4rem]">
-                <h1 className="ruqaa text-3xl md:text-4xl text-white">
+                <h1 className="ruqaa text-2xl md:text-4xl text-white">
                   {welcomeText}
                   {welcomeText.length < fullWelcome.length && (
                     <span className="animate-pulse text-gold opacity-70">|</span>
@@ -132,21 +132,21 @@ export default function LandingPage() {
                     transition={{ duration: 0.7 }}
                     className="mb-8"
                   >
-                    <p className="text-cream/70 text-sm md:text-base font-inter tracking-widest uppercase mb-4">
+                    <p className="text-cream/70 text-xs md:text-base font-inter tracking-widest uppercase mb-3">
                       You have received a personal invitation
                     </p>
                     <div className="relative mx-auto w-fit">
-                      <h2 className="font-playfair text-5xl md:text-7xl font-bold gold-shimmer leading-tight">
+                      <h2 className="font-playfair text-3xl md:text-6xl lg:text-7xl font-bold gold-shimmer leading-tight">
                         Hisham KP
                       </h2>
-                      <p className="font-playfair text-3xl md:text-4xl text-gold/80 italic mt-1">
+                      <p className="font-playfair text-xl md:text-3xl text-gold/80 italic mt-1">
                         &amp; his beloved
                       </p>
-                      <p className="font-playfair text-3xl md:text-5xl font-semibold text-cream mt-1">
+                      <p className="font-playfair text-2xl md:text-4xl font-semibold text-cream mt-1">
                         {WEDDING_CONFIG.bride.name}
                       </p>
                     </div>
-                    <p className="text-gold/60 text-sm mt-6 tracking-[0.3em] uppercase">
+                    <p className="text-gold/60 text-xs md:text-sm mt-4 tracking-[0.3em] uppercase">
                       Nikkah · May 24, 2026
                     </p>
                   </motion.div>
@@ -163,7 +163,7 @@ export default function LandingPage() {
                   >
                     <button
                       onClick={() => setPhase('form')}
-                      className="gold-btn px-10 py-4 rounded-full text-base font-semibold tracking-wider pulse-glow"
+                      className="gold-btn px-7 py-3 md:px-10 md:py-4 rounded-full text-sm md:text-base font-semibold tracking-wider pulse-glow"
                     >
                       Open Your Invitation ✨
                     </button>
@@ -187,7 +187,7 @@ export default function LandingPage() {
               className="w-full max-w-md"
             >
               {/* Card */}
-              <div className="rounded-2xl p-8 md:p-10 relative overflow-hidden"
+              <div className="rounded-2xl p-6 md:p-10 relative overflow-hidden"
                 style={{
                   background: 'rgba(27,46,26,0.6)',
                   backdropFilter: 'blur(20px)',
@@ -290,7 +290,7 @@ export default function LandingPage() {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="text-8xl mb-6"
+                className="text-6xl md:text-8xl mb-4 md:mb-6"
               >
                 💌
               </motion.div>
@@ -308,7 +308,7 @@ export default function LandingPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="font-playfair text-3xl md:text-4xl text-cream font-bold mb-2"
+                className="font-playfair text-2xl md:text-4xl text-cream font-bold mb-2"
               >
                 Welcome, <span className="gold-shimmer">{name}</span>!
               </motion.h2>
@@ -317,7 +317,7 @@ export default function LandingPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
-                className="text-cream/60 text-sm mb-10 font-inter leading-relaxed"
+                className="text-cream/60 text-xs md:text-sm mb-7 md:mb-10 font-inter leading-relaxed"
               >
                 You have been personally invited to witness<br />
                 a blessed Nikkah celebration ✨
@@ -330,7 +330,7 @@ export default function LandingPage() {
               >
                 <button
                   onClick={goToInvitation}
-                  className="gold-btn px-12 py-5 rounded-full text-lg font-bold tracking-wider pulse-glow"
+                  className="gold-btn px-8 py-3 md:px-12 md:py-5 rounded-full text-base md:text-lg font-bold tracking-wider pulse-glow"
                 >
                   Open My Invitation 🎊
                 </button>

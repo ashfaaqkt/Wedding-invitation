@@ -80,7 +80,7 @@ export default function InvitationPage() {
       <IslamicBackground />
       <StarField />
 
-      <div className="relative z-10 max-w-2xl mx-auto px-4 py-12 md:py-20">
+      <div className="relative z-10 max-w-2xl mx-auto px-4 py-8 md:py-20">
 
         {/* ── TOP INVITATION CARD ── */}
         <motion.div
@@ -97,10 +97,10 @@ export default function InvitationPage() {
         >
           <IslamicBorder />
 
-          <div className="p-8 md:p-12 text-center">
+          <div className="p-5 md:p-12 text-center">
             {/* Bismillah */}
             <motion.div {...fadeUp(0.2)} className="mb-6">
-              <p className="bismillah text-4xl md:text-5xl gold-shimmer">
+              <p className="bismillah text-2xl md:text-5xl gold-shimmer">
                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
               </p>
             </motion.div>
@@ -116,7 +116,7 @@ export default function InvitationPage() {
               <p className="text-cream/60 text-xs font-inter tracking-[0.3em] uppercase mb-2">
                 Personal Invitation for
               </p>
-              <h1 className="font-playfair text-4xl md:text-5xl gold-shimmer font-bold">
+              <h1 className="font-playfair text-3xl md:text-5xl gold-shimmer font-bold">
                 {guestName}
               </h1>
             </motion.div>
@@ -132,21 +132,21 @@ export default function InvitationPage() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-full h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(212,175,55,0.4), transparent)' }} />
                 </div>
-                <div className="relative flex items-center justify-center gap-6 md:gap-10">
+                <div className="relative flex items-center justify-center gap-3 md:gap-10">
                   <div className="text-center">
-                    <p className="text-cream/50 text-xs tracking-widest uppercase mb-1">Groom</p>
-                    <h2 className="font-playfair text-4xl md:text-5xl font-bold gold-shimmer">
+                    <p className="text-cream/50 text-[10px] md:text-xs tracking-widest uppercase mb-1">Groom</p>
+                    <h2 className="font-playfair text-2xl md:text-5xl font-bold gold-shimmer leading-tight">
                       {WEDDING_CONFIG.groom.name}
                     </h2>
                   </div>
                   <div className="text-center flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center">
-                      <span className="text-gold font-amiri text-2xl">&</span>
+                    <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-gold/40 flex items-center justify-center">
+                      <span className="text-gold font-amiri text-lg md:text-2xl">&</span>
                     </div>
                   </div>
                   <div className="text-center">
-                    <p className="text-cream/50 text-xs tracking-widest uppercase mb-1">Bride</p>
-                    <h2 className="font-playfair text-4xl md:text-5xl font-bold text-cream">
+                    <p className="text-cream/50 text-[10px] md:text-xs tracking-widest uppercase mb-1">Bride</p>
+                    <h2 className="font-playfair text-2xl md:text-5xl font-bold text-cream leading-tight">
                       {WEDDING_CONFIG.bride.name}
                     </h2>
                   </div>
@@ -281,7 +281,7 @@ export default function InvitationPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.7 }}
-          className="rounded-2xl p-6 md:p-8 mb-8"
+          className="rounded-2xl p-4 md:p-8 mb-8"
           style={{
             background: 'rgba(13,10,8,0.7)',
             backdropFilter: 'blur(20px)',
@@ -328,34 +328,34 @@ export default function InvitationPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.7, duration: 0.7 }}
-          className="grid grid-cols-2 gap-4 mb-12"
+          className="grid grid-cols-2 gap-3 mb-10"
         >
           <button
             onClick={() => setCalendarOpen(true)}
-            className="flex flex-col items-center gap-2 p-5 rounded-2xl transition-all hover:scale-105"
+            className="flex flex-col items-center gap-1.5 p-4 rounded-2xl transition-all hover:scale-105"
             style={{
               background: 'rgba(212,175,55,0.12)',
               border: '1px solid rgba(212,175,55,0.3)',
             }}
           >
-            <span className="text-3xl">📅</span>
-            <span className="text-cream/80 text-sm font-semibold">Add to Calendar</span>
-            <span className="text-cream/40 text-xs">Never miss the date</span>
+            <span className="text-2xl md:text-3xl">📅</span>
+            <span className="text-cream/80 text-xs md:text-sm font-semibold">Add to Calendar</span>
+            <span className="text-cream/40 text-[10px] md:text-xs">Never miss the date</span>
           </button>
 
           <a
             href={WEDDING_CONFIG.events.nikkah.mapsLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2 p-5 rounded-2xl transition-all hover:scale-105"
+            className="flex flex-col items-center gap-1.5 p-4 rounded-2xl transition-all hover:scale-105"
             style={{
               background: 'rgba(45,106,79,0.2)',
               border: '1px solid rgba(64,145,108,0.4)',
             }}
           >
-            <span className="text-3xl">🗺️</span>
-            <span className="text-cream/80 text-sm font-semibold">Get Directions</span>
-            <span className="text-cream/40 text-xs">Navigate to venue</span>
+            <span className="text-2xl md:text-3xl">🗺️</span>
+            <span className="text-cream/80 text-xs md:text-sm font-semibold">Get Directions</span>
+            <span className="text-cream/40 text-[10px] md:text-xs">Navigate to venue</span>
           </a>
 
         </motion.div>
