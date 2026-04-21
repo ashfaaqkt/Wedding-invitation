@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'You\'re Invited — Ashfaaq\'s Nikkah 2026',
-  description: 'A personal invitation to celebrate the blessed Nikkah of Ashfaaq. Join us for Mehendi (May 23), Nikkah (May 24) & Reception (May 25), 2026.',
+  title: 'You\'re Invited — Hisham KP\'s Nikkah 2026',
+  description: 'A personal invitation to celebrate the blessed Nikkah of Hisham KP. Join us for Mehendi (May 23), Nikkah (May 24) & Reception (May 25), 2026.',
   openGraph: {
-    title: 'You\'re Invited — Ashfaaq\'s Nikkah 2026',
+    title: 'You\'re Invited — Hisham KP\'s Nikkah 2026',
     description: 'Join us in celebrating this blessed union. ✨',
     type: 'website',
   },

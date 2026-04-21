@@ -80,8 +80,8 @@ export default function InvitationPage() {
   const shareInvitation = async () => {
     try {
       await navigator.share({
-        title: "Ashfaaq's Nikkah Invitation",
-        text: `I've been personally invited to Ashfaaq's Nikkah! 🎉`,
+        title: "Hisham KP's Nikkah Invitation",
+        text: `I've been personally invited to Hisham KP's Nikkah! 🎉`,
         url: window.location.origin,
       })
     } catch {
@@ -390,7 +390,7 @@ export default function InvitationPage() {
           </button>
 
           <a
-            href={`https://wa.me/?text=${encodeURIComponent(`I've been personally invited to Ashfaaq's Nikkah! 🎉 Join us: ${typeof window !== 'undefined' ? window.location.origin : ''}`)}`}
+            href={`https://wa.me/?text=${encodeURIComponent(`I've been personally invited to Hisham KP's Nikkah! 🎉 Join us: ${typeof window !== 'undefined' ? window.location.origin : ''}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 p-5 rounded-2xl transition-all hover:scale-105"

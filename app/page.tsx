@@ -137,7 +137,7 @@ export default function LandingPage() {
                     </p>
                     <div className="relative mx-auto w-fit">
                       <h2 className="font-playfair text-5xl md:text-7xl font-bold gold-shimmer leading-tight">
-                        Ashfaaq
+                        Hisham KP
                       </h2>
                       <p className="font-playfair text-3xl md:text-4xl text-gold/80 italic mt-1">
                         &amp; his beloved

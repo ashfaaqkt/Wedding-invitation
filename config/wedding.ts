@@ -1,7 +1,7 @@
 export const WEDDING_CONFIG = {
   groom: {
-    name: 'Ashfaaq',
-    fullName: 'Mohamed Ashfaaq',
+    name: 'Hisham KP',
+    fullName: 'Hisham KP',
   },
   bride: {
     name: 'Bride Name',
@@ -45,7 +45,7 @@ export const WEDDING_CONFIG = {
       description: 'Celebrate with us at the grand reception dinner',
     },
   },
-  hashtag: '#AshfaaqNikkah2026',
+  hashtag: '#HishamNikkah2026',
   adminPassword: 'ashfaaq321',
   createdBy: 'AshTech',
 }

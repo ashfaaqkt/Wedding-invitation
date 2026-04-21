@@ -19,7 +19,7 @@ function makeGoogleUrl(event: typeof WEDDING_CONFIG.events.nikkah, title: string
   const start = formatGoogleDate(event.date, event.time)
   const endHour = parseInt(start.slice(9, 11)) + 3
   const end = start.slice(0, 9) + String(endHour).padStart(2, '0') + start.slice(11)
-  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title + ' - Ashfaaq & ' + WEDDING_CONFIG.bride.name)}&dates=${start}/${end}&details=${encodeURIComponent('You are personally invited! ' + event.description)}&location=${encodeURIComponent(event.venue + ', ' + event.address)}`
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title + ' - Hisham KP & ' + WEDDING_CONFIG.bride.name)}&dates=${start}/${end}&details=${encodeURIComponent('You are personally invited! ' + event.description)}&location=${encodeURIComponent(event.venue + ', ' + event.address)}`
 }
 
 function makeOutlookUrl(event: typeof WEDDING_CONFIG.events.nikkah, title: string) {
@@ -40,7 +40,7 @@ function makeICS(event: typeof WEDDING_CONFIG.events.nikkah, title: string): str
     'BEGIN:VEVENT',
     `DTSTART:${start}`,
     `DTEND:${end}`,
-    `SUMMARY:${title} - Ashfaaq & ${WEDDING_CONFIG.bride.name}`,
+    `SUMMARY:${title} - Hisham KP & ${WEDDING_CONFIG.bride.name}`,
     `DESCRIPTION:You are personally invited to this blessed occasion.`,
     `LOCATION:${event.venue}, ${event.address}`,
     'END:VEVENT',

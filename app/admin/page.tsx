@@ -211,7 +211,7 @@ export default function AdminPage() {
                 </div>
                 <div>
                   <h1 className="font-playfair text-lg text-cream">Admin Dashboard</h1>
-                  <p className="text-cream/40 text-xs">Ashfaaq Nikkah 2026</p>
+                  <p className="text-cream/40 text-xs">Hisham KP Nikkah 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -384,7 +384,7 @@ export default function AdminPage() {
               {/* Footer */}
               <div className="mt-8 text-center">
                 <p className="text-cream/20 text-xs">
-                  Admin Panel · Ashfaaq Nikkah 2026 · Made by{' '}
+                  Admin Panel · Hisham KP Nikkah 2026 · Made by{' '}
                   <span className="text-gold/40">AshTech</span>
                 </p>
               </div>
