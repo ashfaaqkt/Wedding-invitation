@@ -3,9 +3,7 @@ const nextConfig = {
   images: {
     domains: ['maps.googleapis.com', 'firebasestorage.googleapis.com'],
   },
-  experimental: {
-    serverComponentsExternalPackages: ['@anthropic-ai/sdk'],
-  },
+  serverExternalPackages: ['@anthropic-ai/sdk'],
 }
 
 module.exports = nextConfig

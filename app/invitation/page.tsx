@@ -34,7 +34,7 @@ const events = [
     ...WEDDING_CONFIG.events.reception,
     gradient: 'from-rose-900 to-red-900',
     border: '#722F37',
-    light: '#fca5a5',
+    light: '#ffffff',
     emoji: '✨',
   },
 ]
@@ -46,8 +46,6 @@ export default function InvitationPage() {
   const [aiLoading, setAiLoading] = useState(true)
   const [activeEvent, setActiveEvent] = useState<number | null>(null)
   const [calendarOpen, setCalendarOpen] = useState(false)
-  const [copied, setCopied] = useState(false)
-
   useEffect(() => {
     const name = sessionStorage.getItem('guest_name')
     if (name) setGuestName(name)
@@ -74,20 +72,6 @@ export default function InvitationPage() {
       )
     } finally {
       setAiLoading(false)
-    }
-  }
-
-  const shareInvitation = async () => {
-    try {
-      await navigator.share({
-        title: "Hisham KP's Nikkah Invitation",
-        text: `I've been personally invited to Hisham KP's Nikkah! 🎉`,
-        url: window.location.origin,
-      })
-    } catch {
-      navigator.clipboard.writeText(window.location.origin)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
     }
   }
 
@@ -180,7 +164,7 @@ export default function InvitationPage() {
               className="rounded-xl p-5 mb-6"
               style={{ background: 'rgba(212,175,55,0.08)', border: '1px solid rgba(212,175,55,0.2)' }}
             >
-              <p className="bismillah text-xl text-gold/90 leading-relaxed mb-2 font-bold">
+              <p className="bismillah text-xl leading-relaxed mb-2 font-bold" style={{ color: '#ffffff', WebkitTextFillColor: '#ffffff' }}>
                 وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
               </p>
               <p className="text-cream/50 text-xs font-inter italic">
@@ -308,7 +292,7 @@ export default function InvitationPage() {
             <div className="w-8 h-8 rounded-lg bg-gold/20 flex items-center justify-center">
               <span className="text-sm">✨</span>
             </div>
-            <h3 className="font-playfair text-lg text-cream">A Personal Message for You</h3>
+            <h3 className="font-playfair text-lg text-white">A Personal Message for You</h3>
             <span className="ml-auto text-xs text-gold/60 bg-gold/10 px-2 py-1 rounded-full border border-gold/20">
               AI ✦
             </span>
@@ -374,35 +358,6 @@ export default function InvitationPage() {
             <span className="text-cream/40 text-xs">Navigate to venue</span>
           </a>
 
-          <button
-            onClick={shareInvitation}
-            className="flex flex-col items-center gap-2 p-5 rounded-2xl transition-all hover:scale-105"
-            style={{
-              background: 'rgba(114,47,55,0.2)',
-              border: '1px solid rgba(114,47,55,0.5)',
-            }}
-          >
-            <span className="text-3xl">{copied ? '✅' : '🔗'}</span>
-            <span className="text-cream/80 text-sm font-semibold">
-              {copied ? 'Link Copied!' : 'Share'}
-            </span>
-            <span className="text-cream/40 text-xs">Spread the joy</span>
-          </button>
-
-          <a
-            href={`https://wa.me/?text=${encodeURIComponent(`I've been personally invited to Hisham KP's Nikkah! 🎉 Join us: ${typeof window !== 'undefined' ? window.location.origin : ''}`)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2 p-5 rounded-2xl transition-all hover:scale-105"
-            style={{
-              background: 'rgba(37,211,102,0.1)',
-              border: '1px solid rgba(37,211,102,0.3)',
-            }}
-          >
-            <span className="text-3xl">💬</span>
-            <span className="text-cream/80 text-sm font-semibold">WhatsApp</span>
-            <span className="text-cream/40 text-xs">Share via WhatsApp</span>
-          </a>
         </motion.div>
 
         {/* ── FOOTER ── */}
@@ -417,7 +372,7 @@ export default function InvitationPage() {
               Barakallahu Lakuma Wa Baraka Alaykuma
             </span>
           </div>
-          <p className="bismillah text-xl text-gold/50">
+          <p className="bismillah text-xl text-white">
             بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا
           </p>
           <p className="text-cream/30 text-xs font-inter tracking-[0.2em] mt-6">

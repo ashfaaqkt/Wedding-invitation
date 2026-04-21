@@ -21,7 +21,7 @@ export default function LandingPage() {
   const [showBtn, setShowBtn] = useState(false)
   const nameRef = useRef<HTMLInputElement>(null)
 
-  const fullWelcome = 'Assalamu Alaikum Wa Rahmatullahi Wa Barakatuh'
+  const fullWelcome = 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ'
 
   // Typewriter effect
   useEffect(() => {
@@ -98,7 +98,7 @@ export default function LandingPage() {
                 transition={{ delay: 0.3, duration: 0.8 }}
                 className="mb-6"
               >
-                <p className="bismillah text-4xl md:text-5xl gold-shimmer font-bold leading-relaxed">
+                <p className="bismillah bismillah-display text-5xl md:text-7xl gold-shimmer font-semibold leading-relaxed">
                   بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
                 </p>
               </motion.div>
@@ -115,10 +115,10 @@ export default function LandingPage() {
 
               {/* Typewriter welcome */}
               <div className="mb-6 min-h-[4rem]">
-                <h1 className="font-playfair text-xl md:text-2xl text-gold-light leading-relaxed">
+                <h1 className="ruqaa text-3xl md:text-4xl text-white">
                   {welcomeText}
                   {welcomeText.length < fullWelcome.length && (
-                    <span className="animate-pulse text-gold">|</span>
+                    <span className="animate-pulse text-gold opacity-70">|</span>
                   )}
                 </h1>
               </div>

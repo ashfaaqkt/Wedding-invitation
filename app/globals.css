@@ -43,7 +43,7 @@ body {
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent !important;
   background-clip: text;
   animation: shimmer 3s linear infinite;
 }
@@ -87,10 +87,38 @@ body {
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
+/* ── Ruqaa calligraphy ── */
+.ruqaa {
+  font-family: 'Aref Ruqaa Ink', 'Aref Ruqaa', 'Amiri', serif;
+  direction: rtl;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: #ffffff !important;
+  text-shadow:
+    0 0 30px rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* ── Bismillah font ── */
 .bismillah {
-  font-family: 'Scheherazade New', 'Amiri', serif;
+  font-family: 'Reem Kufi Ink', 'Reem Kufi', 'Amiri', serif;
   direction: rtl;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* ── Bismillah large display (landing page) ── */
+.bismillah-display {
+  font-family: 'Reem Kufi Ink', 'Reem Kufi', 'Amiri', serif;
+  direction: rtl;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-shadow:
+    0 0 40px rgba(212, 175, 55, 0.5),
+    0 0 80px rgba(212, 175, 55, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.6);
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.4));
 }
 
 /* ── Elegant card ── */
